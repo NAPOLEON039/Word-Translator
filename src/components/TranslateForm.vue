@@ -25,7 +25,7 @@ export default {
       }
   },
   created(){
-      this.language = 'ja';
+      this.language = 'hi';
   },
   methods: {
       formSubmit(e){
