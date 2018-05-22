@@ -28,7 +28,7 @@ export default {
   },
   methods:{
     translateText: function(text, lang){
-      this.$http.get('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20171229T142133Z.2317e0093f50e065.ce7f666dc516435bc4341273ec022cbd2e7dbf1a&lang=' + lang + '&text=' + text)
+      this.$http.get('https://translate.yandex.net/api/v1.5/tr.json/translate?key='API_KEY'&lang=' + lang + '&text=' + text)
       .then(response => {
         this.translatedText = response.body.text[0];
       })
